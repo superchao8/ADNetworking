@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MTLModel.h"
-#import "MTLJSONAdapter.h"
+#import "BaseViewModel.h"
 
 #import "ADPropertyEntity.h"
 #import "PostsItemViewModel.h"
 
-@interface PostsViewModel : MTLModel<MTLJSONSerializing>
+@interface PostsViewModel : BaseViewModel
 
 @property (nonatomic, readonly) PostsItemViewModel *postsItemVM;
 

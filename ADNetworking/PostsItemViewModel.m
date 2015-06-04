@@ -7,6 +7,7 @@
 //
 
 #import "PostsItemViewModel.h"
+#import "NSValueTransformer+MTLPredefinedTransformerAdditions.h"
 
 @implementation PostsItemViewModel
 
@@ -14,7 +15,17 @@
     return @{
              @"postID": @"id",
              @"text": @"text",
+             @"postHtml": @"html",
+             @"sourceVM": @"source",
              };
+}
+
++ (NSValueTransformer *)postHtmlJSONTransformer {
+    return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
+}
+
++ (NSValueTransformer *)sourceVMJSONTransformer {
+    return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:SourceViewModel.class];
 }
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionaryValue error:(NSError **)error

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304190D21B1EAEC70024AE49 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 304190D11B1EAEC70024AE49 /* BaseViewModel.m */; };
+		304190D51B1EB31F0024AE49 /* SourceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 304190D41B1EB31F0024AE49 /* SourceViewModel.m */; };
 		875218BF759AE0696876068A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF56EB4DEE486B7304A03908 /* libPods.a */; };
 		A988DE051AB0219D00783171 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A988DE041AB0219D00783171 /* main.m */; };
 		A988DE081AB0219D00783171 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A988DE071AB0219D00783171 /* AppDelegate.m */; };
@@ -34,6 +36,10 @@
 
 /* Begin PBXFileReference section */
 		0062A9ABD6EFF0F0537CB2A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		304190D01B1EAEC70024AE49 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		304190D11B1EAEC70024AE49 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		304190D31B1EB31F0024AE49 /* SourceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceViewModel.h; sourceTree = "<group>"; };
+		304190D41B1EB31F0024AE49 /* SourceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceViewModel.m; sourceTree = "<group>"; };
 		9EF7A48538B0B19E83046EED /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A988DDFF1AB0219D00783171 /* ADNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A988DE031AB0219D00783171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -176,10 +182,14 @@
 		A988DE381AB1269F00783171 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				304190D01B1EAEC70024AE49 /* BaseViewModel.h */,
+				304190D11B1EAEC70024AE49 /* BaseViewModel.m */,
 				A988DE321AB040A500783171 /* PostsViewModel.h */,
 				A988DE331AB040A500783171 /* PostsViewModel.m */,
 				A988DE351AB11E1600783171 /* PostsItemViewModel.h */,
 				A988DE361AB11E1600783171 /* PostsItemViewModel.m */,
+				304190D31B1EB31F0024AE49 /* SourceViewModel.h */,
+				304190D41B1EB31F0024AE49 /* SourceViewModel.m */,
 			);
 			name = ViewModel;
 			path = ADNetworking;
@@ -324,8 +334,10 @@
 				A988DE341AB040A500783171 /* PostsViewModel.m in Sources */,
 				A988DE2D1AB0389E00783171 /* ADPropertyEntity.m in Sources */,
 				A988DE371AB11E1600783171 /* PostsItemViewModel.m in Sources */,
+				304190D21B1EAEC70024AE49 /* BaseViewModel.m in Sources */,
 				A988DE2A1AB02ACE00783171 /* ADRequireEngineClient.m in Sources */,
 				A988DE081AB0219D00783171 /* AppDelegate.m in Sources */,
+				304190D51B1EB31F0024AE49 /* SourceViewModel.m in Sources */,
 				A988DE301AB0391800783171 /* ADRequireEngine.m in Sources */,
 				A988DE051AB0219D00783171 /* main.m in Sources */,
 			);
